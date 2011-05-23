@@ -1,6 +1,6 @@
-= Ekuseru
+= excelr
 
-Ekuseru is a plugin to generate Microsoft Excel documents with Rails. This plugin
+excelr is a plugin to generate Microsoft Excel documents with Rails. This plugin
 provides templating abilities to create excel documents using Spreadsheet gem.
 
 Having a template is very convenient, because we can define how our file looks
@@ -24,17 +24,17 @@ You will need to install Spreadsheet gem to use this plugin.
 
   sudo gem install spreadsheet
 
-=== Ekuseru plugin
+=== excelr plugin
 
 Run the following command in your RAILS_ROOT:
 
-  ./script/plugin install git://github.com/xinuc/ekuseru.git
+  ./script/plugin install git://github.com/xinuc/excelr.git
 
 Or, simply get the tarball at:
 
-  http://github.com/xinuc/ekuseru/tarball/master
+  http://github.com/xinuc/excelr/tarball/master
 
-extract it to your vendor/plugins and rename it to 'ekuseru'
+extract it to your vendor/plugins and rename it to 'excelr'
 
 == Usage
 
@@ -60,8 +60,8 @@ Example:
 
 === Template
 
-Ekuseru will use .eku files as the template. So, with the example above,
-we will need to create 'index.xls.eku' in app/views/products/.
+excelr will use .excelr files as the template. So, with the example above,
+we will need to create 'index.xls.excelr' in app/views/products/.
 Basically it's just an ordinary ruby file.
 In the template, we will get a <code>xls</code> variable which is a
 Spreadsheet::Workbook object ready to be modified like whatever we want.

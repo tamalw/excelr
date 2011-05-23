@@ -1,13 +1,13 @@
 require File.join(File.dirname(__FILE__), 'test_helper')
 
-class EkuseruController < ActionController::Base
+class ExcelrController < ActionController::Base
   append_view_path File.join(File.dirname(__FILE__), 'fixtures')
   
   def index() respond_to{ |format| format.xls } end
   def rescue_action(e) raise e end
 end
 
-class EkuseruControllerTest < ActionController::TestCase
+class ExcelrControllerTest < ActionController::TestCase
   def setup
     @request.format = "xls"
     get :index

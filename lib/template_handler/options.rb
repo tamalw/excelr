@@ -1,4 +1,4 @@
-module Ekuseru
+module Excelr
   module TemplateHandler
     class Options
 
